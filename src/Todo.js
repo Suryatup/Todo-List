@@ -5,8 +5,8 @@ import Typography from '@mui/material/Typography';
 
 export default function Todo({ todo, toggleComplete }) {
   return (
-    <ListItem>
-      <Checkbox
+    <ListItem >
+      <Checkbox style={{color:'white'}}
         checked={todo.complete}
         onChange={() => {
           toggleComplete(todo.id);
